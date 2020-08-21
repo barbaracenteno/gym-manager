@@ -1,0 +1,75 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1573124356790-446c0081d9ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60",
+      "name": "Gislaine Tedesco",
+      "email": "gislaine@gislaine.com",
+      "birth": 377481600000,
+      "gender": "F",
+      "blood": "O+",
+      "weight": "68",
+      "height": "165"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1584952449284-923d1340e511?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "name": "André Tedesco",
+      "email": "andre@andre.com",
+      "birth": 365644800000,
+      "gender": "M",
+      "blood": "",
+      "weight": "88",
+      "height": "180"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://images.unsplash.com/flagged/photo-1566062284755-a888f33feba3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+      "name": "Maria da Silva",
+      "email": "maria@maria.com",
+      "birth": 513043200000,
+      "gender": "F",
+      "blood": "B-",
+      "weight": "55",
+      "height": "159"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Bárbara Centeno",
+      "birth": 830908800000,
+      "gender": "F",
+      "services": "Musculação, Pilates",
+      "avatar_url": "https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "created_at": 1597955725300
+    },
+    {
+      "id": 2,
+      "name": "Tairone Centeno Livinalli",
+      "birth": 823564800000,
+      "gender": "M",
+      "services": "Musculação, Natação",
+      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+      "created_at": 1597704358830
+    },
+    {
+      "id": 3,
+      "name": "Maria Eduarda Tedesco",
+      "birth": 1118534400000,
+      "gender": "F",
+      "services": "Dança",
+      "avatar_url": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+      "created_at": 1597871848840
+    },
+    {
+      "id": 4,
+      "name": "Laura Tedesco",
+      "birth": 1336521600000,
+      "gender": "F",
+      "services": "Patinação",
+      "avatar_url": "https://images.unsplash.com/photo-1532384305128-54c7ac0d7139?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+      "created_at": 1597955684117
+    }
+  ]
+}
