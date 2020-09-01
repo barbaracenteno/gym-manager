@@ -127,6 +127,7 @@ header {
 
 .double-item > div {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
 }
 
 .last-item {
@@ -176,6 +177,7 @@ input, select {
     outline: none;
     color: #555;
     font-size: 16px;
+    font-weight: bold;
     padding: 8px 0;
 }
 

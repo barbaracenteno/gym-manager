@@ -15,16 +15,18 @@
             <div>{{ member.name }}</div>
         </div>
 
-        <div class="item">
-            <div>Idade</div>
-            <div>{{ member.age }} anos</div>
+        <div class="item double-item">
+            <div>
+                <div>Idade</div>
+                <div>{{ member.age }} anos</div>
+            </div>
+            <div>
+                <div>Aniverário</div>
+                <div>{{ member.birth }}</div>
+            </div>
         </div>
 
-        <div class="item">
-            <div>Aniverário</div>
-            <div>{{ member.birth }}</div>
-        </div>
-
+       
         <div class="item">
             <div>Sexo</div>
             <div>{{ "Feminino" if member.gender == "F" else "Masculino" }}</div>
@@ -36,17 +38,18 @@
         </div>
 
               
-        <div class="item">
-            <div>Peso (kg)</div>
-            <div>{{ member.weight }} </div>
+        <div class="item double-item">
+            <div>
+                <div>Peso (kg)</div>
+                <div>{{ member.weight }} </div>
+            </div>
+            <div>
+                <div>Altura (cm)</div>
+                <div>{{ member.height }}</div>
+            </div>
         </div>
     
-        <div class="item">
-            <div>Altura (cm)</div>
-            <div>{{ member.height }} </div>
-        </div>
-
-        <div class="item">
+        <div class="item last-item">
             <div>Email</div>
             <div>{{ member.email }} </div>
         </div>
