@@ -1,0 +1,73 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<div class="card table-container">
+    <div class="header">
+        <form action= "/members"  method="GET">
+            <div></div>
+            <div>
+                <input 
+                    type="text"
+                    name="filter"
+                    placeholder="Nome ou Email"
+                    value={{filter}}
+                >
+                <button type="submit">
+                    <span class="material-icons">
+                        search
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+        
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>Membro</th>
+                <th>Email</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% if members == 0 %}
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="0">Nenhum membro encontrado</td>
+                </tr>
+            {% endif %}
+
+            {% for member in members %}
+            <tr>
+                <td>
+                    <span style="background-image: url({{member.avatar_url}}"></span>
+                    {{member.name}}
+                </td> 
+                <td>{{member.email}}</td>
+                <td>{{member.weight}} kg</td>
+                <td>{{member.height}} cm</td>
+                <td><a href="members/{{member.id}}">Ver</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <a href="/members/create" class="remove-margin">Novo</a>
+
+    <div class="pagination"
+        data-page={{pagination.page}}
+        data-total={{pagination.total}}
+        data-filter={{filter}}>
+    </div>
+</div>
+
+{% endblock content %}

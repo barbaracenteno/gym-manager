@@ -1,0 +1,78 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<div class="card table-container">
+        
+        <div class="header">
+            <form action= "/instructors"  method="GET">
+                <div></div>
+                <div>
+                    <input 
+                        type="text"
+                        name="filter"
+                        placeholder="Nome ou Atuação"
+                        value={{filter}}
+                    >
+                    <button type="submit">
+                        <span class="material-icons">
+                            search
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        
+        <table width="100%">
+        <thead>
+            <tr>
+                <th>Instrutor</th>
+                <th>Atuação</th>
+                <th>Alunos</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% if instructors == 0 %}
+                <tr>
+                    <td></td>
+                    <td colspan="0">Nenhum instrutor encontrado</td>
+                    <td></td>
+                </tr>
+            {% endif %}
+
+            {% for instructor in instructors %}
+            <tr>
+                <td>
+                   <span style="background-image: url({{instructor.avatar_url}}"></span>
+                    {{instructor.name}}
+                </td> 
+                <td class='instructor-services'><span>{{instructor.services}}</span></td> 
+                <td>{{instructor.total_students}}</td>
+                <td><a href="instructors/{{instructor.id}}">Ver</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+        
+    <a href="/instructors/create" class="remove-margin">Novo</a>
+    
+
+    <div class="pagination"
+        data-page={{pagination.page}}
+        data-total={{pagination.total}}
+        data-filter={{filter}}
+        >
+    </div>
+
+</div>
+
+
+
+{% endblock content %}
